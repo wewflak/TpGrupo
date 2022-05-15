@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>***Listado de Alumnos***</title>
+</head>
+<body>
+<h2>Listado de Alumnos</h2>
+<table> 
+	<tr>
+		<th> Apellido </th>
+		<th> Nombre </th>
+		<th> Fecha de Nacimiento </th>
+		<th> Dni </th>
+		<th> Telefono </th>
+		<th> Genero </th>
+		<th> Libreta universitaria </th>
+		<th> Edad </th>
+	</tr>
+	
+		<tr th:each="alu:${listadoAlumnos}">
+			<th th:text="${alu.apellido}"> </th>
+			<th th:text="${alu.nombre}">  </th>
+			<th th:text="${alu.fechadeN}" >  </th>
+			<th th:text="${alu.dni}"> </th>
+			<th th:text="${alu.telefono}"> </th>
+			<th th:text="${alu.genero}"> </th>
+			<th th:text="${alu.libretauni}"></th>
+			<th th:text="${alu.edad}"> </th> 
+		</tr>
+</table>
+      <a href="menu">Volver al Menu</a>
+</body>
+</html>

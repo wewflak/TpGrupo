@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>***Arreglo Inverso***</title>
+</head>
+<body>
+<h2>Resultado</h2>
+		<table>
+			<tr>
+				<th> Numeros Invertidos </th>
+			</tr>
+			<tr th:each="arr : ${listaEnteros}">
+				<th th:text="${arr.numero}"> </th>
+			</tr>
+
+		</table>
+	
+      <a href="menu">Volver al Menu</a>
+</body>
+</html>
