@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmls:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<h1>Inversion</h1>
+		<h2>Cadena de Texto Ingresada: <span th:text="${texto}"></span></h2>
+<!-- 	para recorrer un arreglo, en el ejemplo de abajo se va a repetir el elemento <span> por cada elemento que haya en resultadoI -->
+		<h2>Arreglo de Caracteres Invertido: <span th:each="lista : ${resultadoI}" th:text ="${lista}"></span></h2>
+	
+	<a href="menu">Volver al Menu</a>
+
+</body>
+</html>
